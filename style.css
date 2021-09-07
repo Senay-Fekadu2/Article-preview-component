@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: manrope;
+    background: hsl(210, 46%, 95%);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    font-size: 0.8125rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.top-section {
+    margin-bottom: 0;
+
+    
+}
+.bottom-section {
+    background: white;
+    padding: 0 3em;
+    padding-top: 3em;
+    margin-top: -1em;
+    padding-bottom: 1em;
+
+}
+img {
+    margin-bottom: 0;
+    max-width: 100%;
+}
+.hero-img {
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+p {
+    line-height: 1.5;
+    font-size: 0.9rem;
+    color: hsl(214, 17%, 51%);
+}
+h1 {
+    color: hsl(217, 19%, 35%);
+    font-size: 1.3rem
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+.col + .col {
+    margin-left: 2em;
+}
+.col {
+    line-height: 0.5;
+}
+.active {
+    display: none;
+}
+.avatar {
+    max-width: 50px;
+    border-radius: 3em;
+}
+.share {
+    margin-left: auto;
+}
+.share:hover {
+    cursor: pointer;
+}
+.share-img {
+    border-radius: 5em;
+    background: hsl(210, 46%, 95%);
+    padding: 0.8em;
+}
+.row {
+    padding-right: 0em;
+    padding: 0 3em;
+    border-bottom-right-radius:1em;
+    border-bottom-left-radius: 1em;
+    background: white;
+}
+.active  {
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    margin-right: 1.3em;
+    color: hsl(214, 40%, 72%);
+}
+.row2 {
+    display: none;
+}
+@media (min-width : 1000px) {
+    .container {
+        display: flex;
+        max-width: 800px;
+    }
+    .hero-img {
+        width: 100%;
+        border-radius: 0;
+        height: 100%;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+    }
+    .top-section {
+        width: 50%;
+    }
+    .bottom-section {
+        width: 50%;
+        padding-top: 0;
+        padding-top: 2em;
+        margin-top: 0;
+        border-radius: 0;
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+    }
+    .row2 {
+        display: flex;
+        align-items: center;
+        line-height: 2.1em;
+    }
+    .row2 h2 {
+        line-height: 1;
+    }
+    .push-up {
+        display: flex;
+        align-items: center;
+        padding: 0 1em;
+        border-radius: 1em;
+        position: relative;
+        bottom: 5em;
+        left: 15em;
+        background:hsl(217, 19%, 35%);
+        
+    }
+
+    .row {
+        display: none;
+    }
+}
